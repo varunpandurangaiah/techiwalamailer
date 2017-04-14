@@ -13,7 +13,7 @@
 			$("#error_message").html("").hide();
 			$.ajax({
 				type: "POST",
-				url: "mail.php",
+				url: "mail.php", // If Your Using Gmail Please use gmail.php
 				data: "name="+name+"&last_name="+last_name+"&message="+message+"&email="+email,
 				success: function(data){
 					msg = 'Message Sent OK Check Spams';
